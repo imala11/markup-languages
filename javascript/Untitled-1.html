@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <form action="http://httpbin.org/get">
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse">
+          <br><br>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other <br>
+              
+        <p><b><u>Hardware parts</u></b></p>
+            <select name="GPU">
+                <option value="Gigabyte GTX1080">Gigabyte GTX1080</option>
+                <option value="Gigabyte GTX1070">Gigabyte GTX1070</option>
+                <option value="Gigabyte GTX1060">Gigabyte GTX1060</option>
+                <option value="Gigabyte GTX1050_TI">MSI GTX1050 TI</option>
+              </select>
+            <br><br>
+            <select name="Procesador">
+                <option value="Intel Core I9">Intel Core I9</option>
+                <option value="Intel Core I7">Intel Core I7</option>
+                <option value="Intel Core I5">Intel Core I5</option>
+                <option value="Intel Core I3">Intel Core I3</option>
+            </select>
+            <br><br>
+            <select name="Motherboard">
+                <option value="MSI">MSI B150M Bazooka Plus</option>
+                <option value="Gigabyte">Gigabyte Z170X Gaming 3</option>
+                <option value="Asrock">Asrock</option>
+                <option value="Asus">Asus</option>
+            </select>
+            <br><br>
+        <p><b><u>Better Game</u></b></p>
+            <input type="checkbox" name="bgame1" value="LOL">League Of Legends
+            <br>
+            <input type="checkbox" name="bgame2" value="DOTA">DOTA 2 
+            <br><br>
+        <input type="submit" value="Submit"><br>
+        </form> 
+        
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    </body>
+</html>
