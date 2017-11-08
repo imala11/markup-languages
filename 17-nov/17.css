@@ -1,8 +1,18 @@
 /*Body*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
     #general {
         width: 100%;
         background-color: blue;
-        height:95%;
+        height:100%;
         margin-top: 0px;
+        background-image: url(img/fondo.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%; 
     }
-    
+
+/*Carousel*/
+
