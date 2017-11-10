@@ -2,6 +2,7 @@
     *{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
     #general {
         width: 100%;
@@ -13,6 +14,87 @@
         background-attachment: fixed;
         background-size: 100% 100%; 
     }
-
+  
 /*Carousel*/
+    .content-all {
+        width: 210px;
+        margin:auto;
+        perspective: 1000px;
+        position: relative;
+    }
+    .content-carrousel {
+        width: 100%;
+        position: absolute;
+        /*rotar y 3d*/
+        animation: rotar 10s infinite linear;
+        transform-style: preserve-3d;
+    }
+    .content-carrousel figure {
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .content-carrousel img {
+        width:100%;
+    }
+    /*images to rotate*/
+    .content-carrousel figure:nth-child(1){transform: rotateY(0deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(2){transform: rotateY(40deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(3){transform: rotateY(80deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(4){transform: rotateY(120deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(5){transform: rotateY(160deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(6){transform: rotateY(200deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(7){transform: rotateY(240deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(8){transform: rotateY(280deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(9){transform: rotateY(320deg)
+    translateZ(300px)}
+    .content-carrousel figure:nth-child(10){transform: rotateY(360deg)
+    translateZ(300px)}
+    /*animation definition*/
+    @keyframes rotar {
+     from{
+         transform: rotateY(0deg)
+    }
+    to{
+        transform: rotateY(360deg)
+    }   
+    }
+/*Menu 3d*/
 
+
+/*Flexbox*/
+
+/*Horizontal menu*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+    }   
